@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>2 Column Section</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <section class="t2-col-section">
+            <div class="t2-col-section-row">
+                <div class="t2-col-section-col">
+                    <lorem-ipsum-copy></lorem-ipsum-copy>
+                </div>
+                <div class="t2-col-section-col bg" style="background-image:url('https://picsum.photos/2000/2000')">
+
+                </div>
+            </div>
+        </section>
+        <section class="t2-col-section" style="background: #111; color: white">
+            <div class="t2-col-section-row">
+                <div class="t2-col-section-col" style="max-width: 600px; justify-self: end;">
+                    <lorem-ipsum-copy></lorem-ipsum-copy>
+                </div>
+                <div class="t2-col-section-col bg" style="">
+                    <img src="https://win.radiox.co.uk/barclaycard-blossoms-2022/img/radiox-presents.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="t2-col-section" style="background-image:url('https://win.heart.co.uk/disneyland-30th-anniversary-2022/img/client-bg.jpg'); padding: 7rem 0;">
+            <div class="t2-col-section-row" style="max-width: 1260px;">
+                <div class="t2-col-section-col" style="grid-column-end: -1; justify-self: end;">
+                    <div class="t2-col-section-col-inner" style="max-width: 450px; color: white; background-color: rgba(0,0,0,0.6);">
+                        <lorem-ipsum-copy></lorem-ipsum-copy>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="t2-col-section" style="background-image:url('https://win.heart.co.uk/disneyland-30th-anniversary-2022/img/client-bg.jpg'); padding: 7rem 0;">
+            <div class="t2-col-section-row" style="max-width: 1160px;">
+                <div class="t2-col-section-col" style="grid-column-end: -1; justify-self: end; max-width: 450px; color: white; background-color: rgba(0,0,0,0.6);">
+                        <lorem-ipsum-copy></lorem-ipsum-copy>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            class LoremIpsumCopy extends HTMLElement {
+                constructor() {
+                    super();
+                    const shadow = this.attachShadow({mode: 'open'});
+                    const content = `<h2>Starting your own business is hard but AXA help make it easier</h2>
+                    <p>Running your own business can be a struggle. That’s why AXA want to make things easier through useful blogs, in-depth guides and practical advice to help your small business.</p>
+                    <p>Before you start your application, click the links below to read some useful guides which will help bring your dream to life.</p>
+                    <p>Running your own business can be a struggle. That’s why AXA want to make things easier through useful blogs, in-depth guides and practical advice to help your small business. Before you start your application, click the links below to read some useful guides which will help bring your dream to life.</p>`;
+                    shadow.innerHTML = content;
+                }
+            }
+            customElements.define('lorem-ipsum-copy', LoremIpsumCopy);
+        </script>
+    </body>
+</html>

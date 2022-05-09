@@ -1,0 +1,27 @@
+@import "reset";
+
+// body {
+//     max-width: 1440px;
+//     margin: 0 auto;
+// }
+
+.t2-col-section {
+    background-size: cover;
+    background-position: center;
+
+    &-row {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    &-col {
+        padding: 2rem 3rem;
+        
+        &.bg {
+            align-self: stretch;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
