@@ -1,11 +1,7 @@
 @import "reset";
 
-// body {
-//     max-width: 1440px;
-//     margin: 0 auto;
-// }
-
 .t2-col-section {
+    $grid-bp: 970px;
     background-size: cover;
     background-position: center;
 
@@ -14,8 +10,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+
+        @media(max-width: $grid-bp) {
+            display: block;
+        }
     }
+    
     &-col {
+        position: relative;
         padding: 2rem 3rem;
         
         &.bg {

@@ -92,7 +92,14 @@ select {
           align-items: center;
 }
 
+@media (max-width: 970px) {
+  .t2-col-section-row {
+    display: block;
+  }
+}
+
 .t2-col-section-col {
+  position: relative;
   padding: 2rem 3rem;
 }
 
