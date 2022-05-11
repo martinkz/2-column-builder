@@ -94,7 +94,8 @@ select {
 
 @media (max-width: 970px) {
   .t2-col-section-row {
-    display: block;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 

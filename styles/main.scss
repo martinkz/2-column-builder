@@ -12,7 +12,7 @@
         align-items: center;
 
         @media(max-width: $grid-bp) {
-            display: block;
+            grid-template-columns: 1fr;
         }
     }
     
