@@ -76,12 +76,12 @@ select {
   }
 }
 
-.t2-col-section {
+.t-2col-section {
   background-size: cover;
   background-position: center;
 }
 
-.t2-col-section-row {
+.t-2col-section-row {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -92,23 +92,55 @@ select {
           align-items: center;
 }
 
-@media (max-width: 970px) {
-  .t2-col-section-row {
+@media (max-width: 1000px) {
+  .t-2col-section-row {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-.t2-col-section-col {
+.t-2col-section-col {
   position: relative;
   padding: 2rem 3rem;
 }
 
-.t2-col-section-col.bg {
+.t-2col-section-col.bg {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .t-2col-section-col.bg {
+    height: 70vw;
+  }
+}
+
+.t-2col-section-col img {
+  width: 100%;
+}
+
+.bgimage-like {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+@media (max-width: 1000px) {
+  .bgimage-like {
+    position: static;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sm-max-w-none {
+    max-width: none !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

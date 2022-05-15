@@ -1,7 +1,8 @@
 @import "reset";
 
-.t2-col-section {
-    $grid-bp: 970px;
+$grid-bp: 1000px;
+
+.t-2col-section {
     background-size: cover;
     background-position: center;
 
@@ -24,6 +25,32 @@
             align-self: stretch;
             background-size: cover;
             background-position: center;
+
+            @media(max-width: $grid-bp) {
+                height: 70vw;
+            }
         }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.bgimage-like {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    object-position: center center;
+
+    @media(max-width: $grid-bp) {
+        position: static;
+    }
+}
+
+@media(max-width: $grid-bp) {
+    .sm-max-w-none {
+        max-width: none !important;
     }
 }
