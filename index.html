@@ -6,6 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>2 Column Section</title>
         <link rel="stylesheet" href="styles/main.css">
+        <style>
+            .style-box {
+                position: absolute;
+                bottom: 0;
+                padding: 1rem;
+                background-color: #222;
+                color: white;
+                font-size: 0.8rem;
+                line-height: 1.2;
+            }
+        </style>
     </head>
     <body>
         <section class="t-2col-section" style="padding: 3rem 0;">
@@ -22,14 +33,14 @@
         </section>
         <section class="t-2col-section">
             <div class="t-2col-section-row" style="background: #f3f3f3;">
-                <div class="t-2col-section-col" style="max-width: 400px; justify-self: end;">
+                <div class="t-2col-section-col sm-max-w-none" style="max-width: 400px; justify-self: end;">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
                 <div class="t-2col-section-col bg" style="background-image:url('https://picsum.photos/2000/2000')"></div>
             </div>
         </section>
         <section class="t-2col-section">
-            <div class="t-2col-section-row" style="">
+            <div class="t-2col-section-row">
                 <div class="t-2col-section-col" style="max-width: 600px; justify-self: center;">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
@@ -40,7 +51,7 @@
         </section>
         <section class="t-2col-section" style="padding: 3rem 0;">
             <div class="t-2col-section-row" style="grid-template-columns: 1fr 2fr; max-width: 1200px;">
-                <div class="t-2col-section-col" style="justify-self: end;">
+                <div class="t-2col-section-col">
                     <img src="https://win.capitaldance.com/virgin-voyages-2022/img/client-1-img.png" alt="">
                 </div>
                 <div class="t-2col-section-col" style="">
@@ -50,7 +61,7 @@
         </section>
         <section class="t-2col-section" style="background: #111; color: white">
             <div class="t-2col-section-row" style="max-width: 1140px;">
-                <div class="t-2col-section-col" style="max-width: 400px; justify-self: end;">
+                <div class="t-2col-section-col sm-max-w-none" style="max-width: 400px; justify-self: end;">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
                 <div class="t-2col-section-col" style="">
@@ -60,17 +71,17 @@
         </section>
         <section class="t-2col-section" style="padding: 3rem 0;">
             <div class="t-2col-section-row" style="max-width: 1200px; padding: 0;">
-                <div class="t-2col-section-col" style="background-color: #4e5fde; color: white; left: 70px; z-index: 2;">
+                <div class="t-2col-section-col" style="left: 50px; z-index: 2; background-color:rgba(78,95,222,0.92); color: white;">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
-                <div class="t-2col-section-col" style="justify-self: end; padding: 0; left: -70px; z-index: 1;">
+                <div class="t-2col-section-col" style="padding: 0; left: -50px; z-index: 1;">
                     <img src="https://win.capitalfm.com/bumble-2022/img/intro.jpg" alt="">
                 </div>
             </div>
         </section>
         <section class="t-2col-section" style="background-image:url('https://win.heart.co.uk/disneyland-30th-anniversary-2022/img/client-bg.jpg'); padding: 7rem 0;">
             <div class="t-2col-section-row" style="max-width: 1160px;">
-                <div class="t-2col-section-col" style="grid-column-end: -1; justify-self: end; max-width: 450px; color: white; background-color: rgba(0,0,0,0.6);">
+                <div class="t-2col-section-col sm-max-w-none" style="grid-column-end: -1; justify-self: end; max-width: 450px; color: white; background-color: rgba(0,0,0,0.6);">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
             </div>
@@ -100,7 +111,7 @@
         </section>
 
         <section class="t-2col-section">
-            <div class="t-2col-section-row" style="">
+            <div class="t-2col-section-row">
                 <div class="t-2col-section-col" style="max-width: 600px; justify-self: center;">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
@@ -124,6 +135,23 @@
                 }
             }
             customElements.define('lorem-ipsum-copy', LoremIpsumCopy);
+            
+
+            const blocks = document.querySelectorAll('.t-2col-section-col');
+            blocks.forEach(function(el) {
+                let str = '';
+                for(let i=0; i<el.style.length;i++) {
+                    str += el.style[i] + ": " + el.style[el.style[i]] + "<br>";
+                }
+                if(str !== '') {
+                    let alignment = el.previousElementSibling === null ? 'left' : 'right';
+                    let styleEl = document.createElement('span');
+                    styleEl.classList.add('style-box');
+                    styleEl.style[alignment] = '0';
+                    styleEl.innerHTML = str;
+                    el.appendChild(styleEl);
+                }
+            });
         </script>
     </body>
 </html>

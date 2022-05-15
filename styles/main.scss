@@ -11,15 +11,17 @@ $grid-bp: 1000px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        border: 3px solid hotpink;
 
         @media(max-width: $grid-bp) {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr !important;
         }
     }
     
     &-col {
         position: relative;
         padding: 2rem 3rem;
+        border: 3px dashed #999;
         
         &.bg {
             align-self: stretch;
@@ -37,6 +39,14 @@ $grid-bp: 1000px;
     }
 }
 
+@media(max-width: $grid-bp) {
+    .sm-max-w-none {
+        max-width: none !important;
+    }
+}
+
+
+
 .bgimage-like {
     position: absolute; 
     width: 100%; 
@@ -49,8 +59,3 @@ $grid-bp: 1000px;
     }
 }
 
-@media(max-width: $grid-bp) {
-    .sm-max-w-none {
-        max-width: none !important;
-    }
-}
