@@ -2,40 +2,38 @@
 
 $grid-bp: 1000px;
 
-.t-2col-section {
+.section-container {
     background-size: cover;
     background-position: center;
+}
 
-    &-row {
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        border: 3px solid hotpink;
+.section-row {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media(max-width: $grid-bp) {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.section-col {
+    position: relative;
+    padding: 2rem 3rem;
+
+    &.bg {
+        align-self: stretch;
+        background-size: cover;
+        background-position: center;
 
         @media(max-width: $grid-bp) {
-            grid-template-columns: 1fr !important;
+            height: 70vw;
         }
     }
-    
-    &-col {
-        position: relative;
-        padding: 2rem 3rem;
-        border: 3px dashed #999;
-        
-        &.bg {
-            align-self: stretch;
-            background-size: cover;
-            background-position: center;
 
-            @media(max-width: $grid-bp) {
-                height: 70vw;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
+    img {
+        width: 100%;
     }
 }
 
