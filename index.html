@@ -65,8 +65,8 @@
             </div>
         </section>
         <section class="section-container" style="padding: 3rem 0;">
-            <div class="section-row" style="grid-template-columns: 1.2fr 2fr; max-width: 1100px;">
-                <div class="section-col">
+            <div class="section-row" style="grid-template-columns: 1fr 2fr; max-width: 1100px;">
+                <div class="section-col" style="padding: 0">
                     <img src="https://win.capitaldance.com/virgin-voyages-2022/img/client-1-img.png" alt="">
                 </div>
                 <div class="section-col" style="">
@@ -86,22 +86,22 @@
         </section>
         <section class="section-container" style="padding: 3rem 0;">
             <div class="section-row" style="max-width: 1200px; padding: 0;">
-                <div class="section-col" style="left: 50px; z-index: 2; background-color:rgba(78,95,222,0.9); color: white;">
+                <div class="section-col sm-reset-pos" style="left: 50px; z-index: 2; background-color:rgba(78,95,222,0.9); color: white;">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
-                <div class="section-col" style="padding: 0; left: -50px; z-index: 1;">
+                <div class="section-col sm-reset-pos" style="padding: 0; left: -50px; z-index: 1;">
                     <img src="https://win.capitalfm.com/bumble-2022/img/intro.jpg" alt="">
                 </div>
             </div>
         </section>
         <section class="section-container">
-            <div class="section-row" style="padding: 40px 0">
-                <div class="section-col" style="left: 40px; top: 40px; z-index: 2; background-color:#059073; color: white; display: grid;">
+            <div class="section-row" style="padding: 40px 0; margin: 0 -40px;">
+                <div class="section-col sm-reset-pos" style="left: 40px; bottom: 40px; z-index: 2; background-color:#059073; color: white; display: grid;">
                     <div class="sm-max-w-none" style="max-width: 450px; justify-self: end;">
                         <lorem-ipsum-copy></lorem-ipsum-copy>
                     </div>
                 </div>
-                <div class="section-col bg" style="padding: 0; left: -40px; bottom: 40px; z-index: 1; background-image: url('https://win.capitalfm.com/ebay-home-and-garden/img/intro_bg-cropped.jpg');">
+                <div class="section-col bg sm-reset-pos" style="left: -40px; top: 40px; z-index: 1; padding: 0; background-image: url('https://win.capitalfm.com/ebay-home-and-garden/img/intro_bg-cropped.jpg');">
                 </div>
             </div>
         </section>
@@ -141,7 +141,7 @@
                 <div class="section-col" style="max-width: 600px; justify-self: center;">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
-                <div class="section-col bg" style="background-image:url('https://win.heart.co.uk/intuit-quickbooks-2021/img/intuitq.png'); aspect-ratio: 1 / 1.2; height: auto;"></div>
+                <div class="section-col bg" style="background-image:url('https://win.heart.co.uk/intuit-quickbooks-2021/img/intuitq.png'); aspect-ratio: 1 / 1.26; height: auto;"></div>
             </div>
         </section>
 
@@ -151,12 +151,12 @@
                     super();
                     const size = this.getAttribute('copy-size');
                     const shadow = this.attachShadow({mode: 'open'});
-                    const content = `<h2>Starting your own business is hard but AXA help make it easier</h2>
-                    <p>Running your own business can be a struggle. That’s why AXA want to make things easier through useful blogs, in-depth guides and practical advice to help your small business.</p>
-                    <p>Before you start your application, click the links below to read some useful guides which will help bring your dream to life.</p>
-                    <p>Running your own business can be a struggle. That’s why AXA want to make things easier through useful blogs, in-depth guides and practical advice to help your small business. Before you start your application, click the links below to read some useful guides which will help bring your dream to life.</p>`;
-                    const extraContent = `<p>Before you start your application, click the links below to read some useful guides which will help bring your dream to life.</p>
-                    <p>Running your own business can be a struggle. That’s why AXA want to make things easier through useful blogs, in-depth guides and practical advice to help your small business.</p>`;
+                    const content = `<h2>Cras tempor tellus neque, sit amet mollis turpis ornare in ex purus</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium ex purus, non suscipit nulla tincidunt sed. Phasellus feugiat urna at aliquam scelerisque. Maecenas fermentum dolor vitae eros varius, quis tempor nunc posuere. Phasellus imperdiet nisl est, vitae viverra justo ultricies sed.</p>
+                    <p>Etiam pellentesque ac libero at dignissim. Quisque nisl quam, condimentum a nibh sed, rhoncus semper dui. Donec eu neque arcu. Duis ultricies magna scelerisque sollicitudin semper. Mauris maximus sapien eget dolor interdum malesuada.</p>
+                    <p>Proin eget libero pretium, porta neque sit amet, venenatis justo. Praesent sed iaculis quam. Vivamus dictum quis ante at consequat. Quisque ligula elit, semper vitae diam at, scelerisque posuere lacus. </p>`;
+                    const extraContent = `<p>Duis et ligula a felis ultrices tristique. Donec dignissim egestas felis, a placerat felis sagittis a. Morbi mattis augue diam, a vehicula mi eleifend quis. Praesent et turpis porta, tincidunt quam non, tristique turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>Praesent at tellus imperdiet, pulvinar eros eget, volutpat orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tincidunt convallis mi, eu eleifend nunc sagittis et.</p>`;
                     shadow.innerHTML = content + (size==='long' ? extraContent : '');
                 }
             }
@@ -164,7 +164,7 @@
 
             function getInlineStyles(el) {
                 let str = '';
-                str += '.'+el.classList.toString().replace(' ', '.') + "<br><br>";
+                str += '.'+el.classList.toString().replace(' ', ' .') + "<br><br>";
                 for(let i=0; i<el.style.length;i++) {
                     str += el.style[i] + ": " + el.style[el.style[i]] + "<br>";
                 }
