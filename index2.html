@@ -250,6 +250,10 @@
             }
             customElements.define('lorem-ipsum-copy', LoremIpsumCopy);
 
+            fetch('styles/main2.scss')
+                .then(response => response.text())
+                .then(data => console.log(data));
+
             // function getInlineStyles(el) {
             //     let str = '';
             //     str += '.'+el.classList.toString().replace(' ', ' .') + "<br><br>";
