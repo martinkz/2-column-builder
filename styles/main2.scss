@@ -1,10 +1,10 @@
 $grid-bp: 1000px;
 
-.section-container {
+.block-grid-wrap {
     background-size: cover;
     background-position: center;
 }
-.section-row {
+.block-grid-row {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,7 +14,7 @@ $grid-bp: 1000px;
         grid-template-columns: 1fr !important;
     }
 }
-.section-col {
+.block-grid-col {
     position: relative;
     padding: 2rem 3rem;
 
@@ -35,7 +35,7 @@ $grid-bp: 1000px;
     }
 }
 
-.bgimage-like {
+.bgimage {
     position: absolute;
     width: 100%; 
     height: 100%; 

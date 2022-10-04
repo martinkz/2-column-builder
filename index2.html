@@ -25,10 +25,10 @@
                 font-size: 0.8rem;
                 line-height: 1.2;
             }
-            .section-row {
+            .block-grid-row {
                 border: 3px solid hotpink;
             }
-            .section-col {
+            .block-grid-col {
                 border: 3px dashed #888;
             }
             .style-tag {
@@ -44,7 +44,7 @@
     </head>
     <body>
         <style class="style-tag">
-            .s1 .section-col:first-child {
+            .col-2-section-1 .block-grid-col:first-child {
                 align-self: stretch;
                 min-height: 480px;
                 background-image:url('https://win.capitalfm.com/madame-tussauds-2022/img/client_bg.jpg'); 
@@ -53,217 +53,221 @@
                 order: 2;
             }
         </style>
-        <section class="s1 section-container">
-            <div class="section-row">
-                <div class="section-col"></div>
-                <div class="section-col"> 
+        <section class="col-2-section-1 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col"></div>
+                <div class="block-grid-col"> 
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s2 .section-col:first-child {
+            .col-2-section-2 .block-grid-col:first-child {
                 align-self: stretch;
                 min-height: 480px;
                 grid-row: 1;
                 grid-column: 1 / 3;
             }
-            .s2 .section-col:first-child img {
+            .col-2-section-2 .block-grid-col:first-child img {
                 object-position: center bottom;
             }
-            .s2 .section-col:last-child {
+            .col-2-section-2 .block-grid-col:last-child {
                 grid-row: 1;
                 grid-column: 2 / 2;
             }
             @media(max-width: 1000px) {
-                .s2 .section-col:first-child {
+                .col-2-section-2 .block-grid-col:first-child {
                     padding: 0;
                     min-height: 0;
                 }
-                .s2 .section-col:last-child {
+                .col-2-section-2 .block-grid-col:last-child {
                     grid-row: 2;
                 }
             }
         </style>
-        <section class="s2 section-container">
-            <div class="section-row">
-                <div class="section-col">
-                    <img class="bgimage-like" src="https://win.classicfm.com/tui-july-2022/img/intro3.jpg" alt="">
+        <section class="col-2-section-2 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col">
+                    <img class="bgimage" src="https://win.classicfm.com/tui-july-2022/img/intro3.jpg" alt="">
                 </div>
-                <div class="section-col"> 
+                <div class="block-grid-col"> 
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s3 .section-col:first-child {
+            .col-2-section-3 .block-grid-col:first-child {
                 align-self: stretch; 
                 min-height: min(480px, 60vw);
                 grid-row: 1;
                 grid-column: 1 / 3;
             }
 
-            .s3 .section-col:first-child:before {
+            .col-2-section-3 .block-grid-col:first-child:before {
                 content: "";
                 position: absolute;
                 top: 0; left: 0; bottom: 0; right: 0;
                 background: url('https://win.heart.co.uk/tesco-sep-2022/img/pizzabgjuly.jpg') no-repeat center center / cover;
             }
             
-            .s3 .section-col:last-child {
+            .col-2-section-3 .block-grid-col:last-child {
                 grid-row: 1;
                 grid-column: 2;
                 background: rgba(255,255,255,0.5);
             }
             @media(max-width: 1000px) {
-                .s3 .section-col:last-child {
+                .col-2-section-3 .block-grid-col:last-child {
                     grid-row: 2;
                 }
             }
         </style>
-        <section class="s3 section-container">
-            <div class="section-row">
-                <div class="section-col">
+        <section class="col-2-section-3 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col">
                     
                 </div>
-                <div class="section-col"> 
+                <div class="block-grid-col"> 
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s4 .section-row {
+            .col-2-section-4 .block-grid-row {
                 background-color: #f2f2f2;
             }
-            .s4 .section-col:first-child {
+            .col-2-section-4 .block-grid-col:first-child {
                 max-width: 400px;
                 justify-self: end;
             }
-            .s4 .section-col:last-child {
+            .col-2-section-4 .block-grid-col:last-child {
                 align-self: stretch;
-                background-size: cover;
-                background-image:url('https://picsum.photos/2000/2000');
+                background: url('https://win.radiox.co.uk/cinch-2022/img/brand_bg.jpg') no-repeat center center / cover ;
+            }
+            @media(max-width: 1000px) {
+                .col-2-section-4 .block-grid-col:last-child {
+                    min-height: min(400px, 50vw);
+                }
             }
         </style>
-        <section class="s4 section-container">
-            <div class="section-row">
-                <div class="section-col sm-max-w-none">
+        <section class="col-2-section-4 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col sm-max-w-none">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
-                <div class="section-col"></div>
+                <div class="block-grid-col"></div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s5 .section-col:first-child {
+            .col-2-section-5 .block-grid-col:first-child {
                 max-width: 600px;
                 justify-self: center;
             }
-            .s5 .section-col:last-child {
+            .col-2-section-5 .block-grid-col:last-child {
                 padding: 0;
             }
         </style>
-        <section class="s5 section-container">
-            <div class="section-row">
-                <div class="section-col">
+        <section class="col-2-section-5 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
-                <div class="section-col">
+                <div class="block-grid-col">
                     <img src="https://win.heart.co.uk/intuit-quickbooks-2021/img/intuitq.png" alt="">
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s6.section-container {
+            .col-2-section-6.block-grid-wrap {
                 padding: 3rem 0;
             }
-            .s6 .section-row {
+            .col-2-section-6 .block-grid-row {
                 grid-template-columns: 1fr 2fr;
                 max-width: 1100px;
             }
-            .s6 .section-col:first-child {
+            .col-2-section-6 .block-grid-col:first-child {
                 padding: 0;
             }
         </style>
-        <section class="s6 section-container">
-            <div class="section-row">
-                <div class="section-col">
+        <section class="col-2-section-6 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col">
                     <img src="https://win.capitaldance.com/virgin-voyages-2022/img/client-1-img.png" alt="">
                 </div>
-                <div class="section-col">
+                <div class="block-grid-col">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s7.section-container {
+            .col-2-section-7.block-grid-wrap {
                 background: #111;
                 color: white;
             }
-            .s7 .section-row {
+            .col-2-section-7 .block-grid-row {
                 max-width: 1140px;
             }
-            .s7 .section-col:first-child {
+            .col-2-section-7 .block-grid-col:first-child {
                 max-width: 400px;
                 justify-self: end;
             }
         </style>
-        <section class="s7 section-container">
-            <div class="section-row">
-                <div class="section-col sm-max-w-none">
+        <section class="col-2-section-7 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col sm-max-w-none">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
-                <div class="section-col">
+                <div class="block-grid-col">
                     <img src="https://win.radiox.co.uk/barclaycard-blossoms-2022/img/radiox-presents.png" alt="">
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s8 {
+            .col-2-section-8 {
                 padding: 3rem 0;
             }
-            .s8 .section-row {
+            .col-2-section-8 .block-grid-row {
                 max-width: 1200px;
                 padding: 0;
             }
-            .s8 .section-col:first-child {
+            .col-2-section-8 .block-grid-col:first-child {
                 left: 50px;
                 z-index: 2;
                 background-color:rgba(78,95,222,0.9); 
                 color: white;
             }
-            .s8 .section-col:last-child {
+            .col-2-section-8 .block-grid-col:last-child {
                 padding: 0; 
                 left: -50px; 
                 z-index: 1;
             }
         </style>
-        <section class="s8 section-container">
-            <div class="section-row">
-                <div class="section-col sm-reset-pos">
+        <section class="col-2-section-8 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col sm-reset-pos">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
-                <div class="section-col sm-reset-pos">
+                <div class="block-grid-col sm-reset-pos">
                     <img src="https://win.capitalfm.com/bumble-2022/img/intro.jpg" alt="">
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s9 {
+            .col-2-section-9 {
                 overflow: hidden;
             }
-            .s9 .section-row {
+            .col-2-section-9 .block-grid-row {
                 padding: 40px 0;
                 margin: 0 -40px;
             }
-            .s9 .section-col:first-child {
+            .col-2-section-9 .block-grid-col:first-child {
                 display: grid;
                 left: 40px; 
                 bottom: 40px; 
@@ -271,11 +275,11 @@
                 background-color:#059073; 
                 color: white; 
             }
-            .s9 .section-col:first-child > div {
+            .col-2-section-9 .block-grid-col:first-child > div {
                 max-width: 450px; 
                 justify-self: end;
             }
-            .s9 .section-col:last-child {
+            .col-2-section-9 .block-grid-col:last-child {
                 align-self: stretch;
                 min-height: min(70vw, 420px);
                 left: -40px;
@@ -285,27 +289,27 @@
                 background: url('https://win.capitalfm.com/ebay-home-and-garden/img/intro_bg-cropped.jpg') no-repeat center center / cover;
             }
         </style>
-        <section class="s9 section-container">
-            <div class="section-row">
-                <div class="section-col sm-reset-pos">
+        <section class="col-2-section-9 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col sm-reset-pos">
                     <div class="sm-max-w-none">
                         <lorem-ipsum-copy></lorem-ipsum-copy>
                     </div>
                 </div>
-                <div class="section-col sm-reset-pos">
+                <div class="block-grid-col sm-reset-pos">
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s10 {
+            .col-2-section-10 {
                 background-image:url('https://win.heart.co.uk/disneyland-paris/img/client-bg.jpg'); 
                 padding: 7rem 0;
             }
-            .s10 .section-row {
+            .col-2-section-10 .block-grid-row {
                 max-width: 1160px;
             }
-            .s10 .section-col:first-child {
+            .col-2-section-10 .block-grid-col:first-child {
                 grid-column-end: -1;
                 justify-self: end;
                 max-width: 450px;
@@ -313,40 +317,40 @@
                 background-color: rgba(0,0,0,0.6);
             }
         </style>
-        <section class="s10 section-container">
-            <div class="section-row">
-                <div class="section-col sm-max-w-none">
+        <section class="col-2-section-10 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col sm-max-w-none">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s11 {
+            .col-2-section-11 {
                 padding: 7rem 0;
-                background-image:url('https://picsum.photos/2000/2000'); 
+                background-image:url('https://win.radiox.co.uk/cinch-2022/img/brand_bg.jpg'); 
             }
-            .s11 .section-row {
+            .col-2-section-11 .block-grid-row {
                 max-width: 1100px; 
                 gap:3rem; 
                 padding: 0 3rem;
             }
-            .s11 .section-col:first-child {
+            .col-2-section-11 .block-grid-col:first-child {
                 color: white; 
                 background-color: rgba(0,0,0,0.75);
             }
-            .s11 .section-col:last-child {
+            .col-2-section-11 .block-grid-col:last-child {
                 align-self: start; 
                 color: white; 
                 background-color: rgba(0,0,0,0.75);
             }
         </style>
-        <section class="s11 section-container">
-            <div class="section-row">
-                <div class="section-col">
+        <section class="col-2-section-11 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col">
                     <lorem-ipsum-copy copy-size="long"></lorem-ipsum-copy>
                 </div>
-                <div class="section-col">
+                <div class="block-grid-col">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
             </div>
             </div>
@@ -355,51 +359,51 @@
         <h1 style="text-align: center; padding: 3rem;">Alternative solutions</h1>
 
         <style class="style-tag">
-            .s12 {
+            .col-2-section-12 {
                 padding: 3rem 0;
             }
-            .s12 .section-col:first-child {
+            .col-2-section-12 .block-grid-col:first-child {
                 align-self: stretch;
                 padding: 0;
                 order: 2;
             }
-            .s12 .section-col:first-child img {
+            .col-2-section-12 .block-grid-col:first-child img {
                 object-position: center 35%;
             }
-            .s12 .section-col:last-child {
+            .col-2-section-12 .block-grid-col:last-child {
                 max-width: 550px; 
                 justify-self: end;
             }
         </style>
-        <section class="s12 section-container">
-            <div class="section-row">
-                <div class="section-col">
-                    <img class="bgimage-like" src="https://win.capitalfm.com/madame-tussauds-2022/img/client_bg.jpg">
+        <section class="col-2-section-12 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col">
+                    <img class="bgimage" src="https://win.capitalfm.com/madame-tussauds-2022/img/client_bg.jpg">
                 </div>
-                <div class="section-col sm-max-w-none"> 
+                <div class="block-grid-col sm-max-w-none"> 
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
             </div>
         </section>
 
         <style class="style-tag">
-            .s13 .section-col:first-child{
+            .col-2-section-13 .block-grid-col:first-child{
                 max-width: 600px; 
                 justify-self: center;
             }
-            .s13 .section-col:last-child{
+            .col-2-section-13 .block-grid-col:last-child{
                 align-self: stretch;
                 background: url('https://win.heart.co.uk/intuit-quickbooks-2021/img/intuitq.png') no-repeat center center / cover; 
                 aspect-ratio: 1 / 1.26; 
                 height: auto;
             }
         </style>
-        <section class="s13 section-container">
-            <div class="section-row">
-                <div class="section-col">
+        <section class="col-2-section-13 block-grid-wrap">
+            <div class="block-grid-row">
+                <div class="block-grid-col">
                     <lorem-ipsum-copy></lorem-ipsum-copy>
                 </div>
-                <div class="section-col"></div>
+                <div class="block-grid-col"></div>
             </div>
         </section>
 
@@ -433,7 +437,7 @@
             //     return str;
             // }
 
-            // const blocks = document.querySelectorAll('.section-col');
+            // const blocks = document.querySelectorAll('.block-grid-col');
             // blocks.forEach(function(el) {
             //     if(el.parentElement.parentElement.id) return;
             //     let str = getInlineStyles(el);
@@ -447,7 +451,7 @@
             //     }
             // });
 
-            // const rows = document.querySelectorAll('.section-row');
+            // const rows = document.querySelectorAll('.block-grid-row');
             // rows.forEach(function(el) {
             //     if(el.parentElement.id) return;
             //     let str = getInlineStyles(el);
