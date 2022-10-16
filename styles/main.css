@@ -56,21 +56,19 @@
   }
 }
 
+.col-2-section-4 {
+  padding: 3rem 0;
+}
 .col-2-section-4 .block-grid-row {
-  background-color: #d9afe7;
+  max-width: 1140px;
+  gap: 3rem;
+}
+.col-2-section-4 .block-grid-col {
+  padding: 0;
 }
 .col-2-section-4 .block-grid-col:first-child {
   max-width: 400px;
   justify-self: end;
-}
-.col-2-section-4 .block-grid-col:last-child {
-  align-self: stretch;
-  background: url("https://win.radiox.co.uk/cinch-2022/img/brand_bg.jpg") no-repeat center center/cover;
-}
-@media (max-width: 1000px) {
-  .col-2-section-4 .block-grid-col:last-child {
-    min-height: min(400px, 50vw);
-  }
 }
 
 .col-2-section-5 .block-grid-col:first-child {
@@ -92,16 +90,21 @@
   padding: 0;
 }
 
-.col-2-section-7 {
-  background: #111;
-  color: white;
-}
 .col-2-section-7 .block-grid-row {
-  max-width: 1140px;
+  background-color: #d9afe7;
 }
 .col-2-section-7 .block-grid-col:first-child {
   max-width: 400px;
   justify-self: end;
+}
+.col-2-section-7 .block-grid-col:last-child {
+  align-self: stretch;
+  background: url("https://win.radiox.co.uk/cinch-2022/img/brand_bg.jpg") no-repeat center center/cover;
+}
+@media (max-width: 1000px) {
+  .col-2-section-7 .block-grid-col:last-child {
+    min-height: min(400px, 50vw);
+  }
 }
 
 .col-2-section-8 {
