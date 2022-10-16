@@ -1,5 +1,7 @@
 $grid-bp: 1000px;
 
+@import 'sections';
+
 .block-grid-row {
     margin: 0 auto;
     display: grid;

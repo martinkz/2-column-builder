@@ -1,3 +1,218 @@
+.col-2-section-1 .block-grid-col:first-child {
+  align-self: stretch;
+  min-height: 480px;
+  background: url("https://win.capitalfm.com/madame-tussauds-2022/img/client_bg.jpg") no-repeat center 35%/cover;
+  order: 2;
+}
+
+.col-2-section-2 .block-grid-col:first-child {
+  align-self: stretch;
+  min-height: 480px;
+  grid-row: 1;
+  grid-column: 1/3;
+}
+@media (max-width: 1000px) {
+  .col-2-section-2 .block-grid-col:first-child {
+    padding: 0;
+    min-height: 0;
+  }
+}
+.col-2-section-2 .block-grid-col:first-child img {
+  object-position: center bottom;
+}
+.col-2-section-2 .block-grid-col:last-child {
+  grid-row: 1;
+  grid-column: 2/2;
+}
+@media (max-width: 1000px) {
+  .col-2-section-2 .block-grid-col:last-child {
+    grid-row: 2;
+  }
+}
+
+.col-2-section-3 .block-grid-col:first-child {
+  align-self: stretch;
+  min-height: min(480px, 60vw);
+  grid-row: 1;
+  grid-column: 1/3;
+}
+.col-2-section-3 .block-grid-col:first-child:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("https://win.heart.co.uk/tesco-sep-2022/img/pizzabgjuly.jpg") no-repeat center center/cover;
+}
+.col-2-section-3 .block-grid-col:last-child {
+  grid-row: 1;
+  grid-column: 2;
+  background: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 1000px) {
+  .col-2-section-3 .block-grid-col:last-child {
+    grid-row: 2;
+  }
+}
+
+.col-2-section-4 .block-grid-row {
+  background-color: #d9afe7;
+}
+.col-2-section-4 .block-grid-col:first-child {
+  max-width: 400px;
+  justify-self: end;
+}
+.col-2-section-4 .block-grid-col:last-child {
+  align-self: stretch;
+  background: url("https://win.radiox.co.uk/cinch-2022/img/brand_bg.jpg") no-repeat center center/cover;
+}
+@media (max-width: 1000px) {
+  .col-2-section-4 .block-grid-col:last-child {
+    min-height: min(400px, 50vw);
+  }
+}
+
+.col-2-section-5 .block-grid-col:first-child {
+  max-width: 600px;
+  justify-self: center;
+}
+.col-2-section-5 .block-grid-col:last-child {
+  padding: 0;
+}
+
+.col-2-section-6 {
+  padding: 3rem 0;
+}
+.col-2-section-6 .block-grid-row {
+  grid-template-columns: 1fr 2fr;
+  max-width: 1100px;
+}
+.col-2-section-6 .block-grid-col:first-child {
+  padding: 0;
+}
+
+.col-2-section-7 {
+  background: #111;
+  color: white;
+}
+.col-2-section-7 .block-grid-row {
+  max-width: 1140px;
+}
+.col-2-section-7 .block-grid-col:first-child {
+  max-width: 400px;
+  justify-self: end;
+}
+
+.col-2-section-8 {
+  padding: 3rem 0;
+}
+.col-2-section-8 .block-grid-row {
+  max-width: 1200px;
+  padding: 0;
+}
+.col-2-section-8 .block-grid-col:first-child {
+  left: 50px;
+  z-index: 2;
+  background-color: rgba(78, 95, 222, 0.9);
+  color: white;
+}
+.col-2-section-8 .block-grid-col:last-child {
+  padding: 0;
+  left: -50px;
+  z-index: 1;
+}
+
+.col-2-section-9 {
+  overflow: hidden;
+}
+.col-2-section-9 .block-grid-row {
+  padding: 40px 0;
+  margin: 0 -40px;
+}
+.col-2-section-9 .block-grid-col:first-child {
+  display: grid;
+  left: 40px;
+  bottom: 40px;
+  z-index: 2;
+  background-color: #059073;
+  color: white;
+}
+.col-2-section-9 .block-grid-col:first-child > div {
+  max-width: 450px;
+  justify-self: end;
+}
+.col-2-section-9 .block-grid-col:last-child {
+  align-self: stretch;
+  min-height: min(70vw, 420px);
+  left: -40px;
+  top: 40px;
+  z-index: 1;
+  padding: 0;
+  background: url("https://win.capitalfm.com/ebay-home-and-garden/img/intro_bg-cropped.jpg") no-repeat center center/cover;
+}
+
+.col-2-section-10 {
+  background-image: url("https://win.heart.co.uk/disneyland-paris/img/client-bg.jpg");
+  padding: 7rem 0;
+}
+.col-2-section-10 .block-grid-row {
+  max-width: 1200px;
+}
+.col-2-section-10 .block-grid-col:first-child {
+  grid-column-end: -1;
+  justify-self: end;
+  max-width: 350px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.col-2-section-11 {
+  padding: 7rem 0;
+  background: url("https://win.radiox.co.uk/cinch-2022/img/brand_bg.jpg") no-repeat center center/cover;
+}
+.col-2-section-11 .block-grid-row {
+  max-width: 1100px;
+  gap: 3rem;
+  padding: 0 3rem;
+}
+.col-2-section-11 .block-grid-col:first-child {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.col-2-section-11 .block-grid-col:last-child {
+  align-self: start;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.col-2-section-12 {
+  padding: 3rem 0;
+}
+.col-2-section-12 .block-grid-col:first-child {
+  align-self: stretch;
+  padding: 0;
+  order: 2;
+}
+.col-2-section-12 .block-grid-col:first-child img {
+  object-position: center 35%;
+}
+.col-2-section-12 .block-grid-col:last-child {
+  max-width: 550px;
+  justify-self: end;
+}
+
+.col-2-section-13 .block-grid-col:first-child {
+  max-width: 600px;
+  justify-self: center;
+}
+.col-2-section-13 .block-grid-col:last-child {
+  align-self: stretch;
+  background: url("https://win.heart.co.uk/intuit-quickbooks-2021/img/intuitq.png") no-repeat center center/cover;
+  aspect-ratio: 1/1.26;
+  height: auto;
+}
+
 .block-grid-row {
   margin: 0 auto;
   display: grid;

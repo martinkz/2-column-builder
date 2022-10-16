@@ -1,0 +1,37 @@
+.col-2-section-1 .block-grid-col:first-child {
+  align-self: stretch;
+  min-height: 480px;
+  background-image: url("https://win.capitalfm.com/madame-tussauds-2022/img/client_bg.jpg");
+  background-position: center 35%;
+  background-size: cover;
+  order: 2;
+}
+
+.col-2-section-2 .block-grid-col:first-child {
+  align-self: stretch;
+  min-height: 480px;
+  grid-row: 1;
+  grid-column: 1/3;
+}
+
+.col-2-section-2 .block-grid-col:first-child img {
+  object-position: center bottom;
+}
+
+.col-2-section-2 .block-grid-col:last-child {
+  grid-row: 1;
+  grid-column: 2/2;
+}
+
+@media (max-width: 1000px) {
+  .col-2-section-2 .block-grid-col:first-child {
+    padding: 0;
+    min-height: 0;
+  }
+
+  .col-2-section-2 .block-grid-col:last-child {
+    grid-row: 2;
+  }
+}
+
+/*# sourceMappingURL=sections.css.map */
