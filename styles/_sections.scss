@@ -1,6 +1,6 @@
-.col-2-section-1 {
+.grid-section-1 {
     
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         align-self: stretch;
         min-height: 480px;
         background: url('https://win.capitalfm.com/madame-tussauds-2022/img/client_bg.jpg') no-repeat center 35% / cover;
@@ -8,9 +8,9 @@
     }
 }
 //-----
-.col-2-section-2 {
+.grid-section-2 {
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         align-self: stretch;
         min-height: 480px;
         grid-row: 1;
@@ -26,7 +26,7 @@
         }
     }
 
-    .block-grid-col:last-child {
+    .grid-col:last-child {
         grid-row: 1;
         grid-column: 2 / 2;
 
@@ -36,9 +36,9 @@
     }
 }
 //-----
-.col-2-section-3 {
+.grid-section-3 {
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         align-self: stretch; 
         min-height: min(480px, 60vw);
         grid-row: 1;
@@ -52,7 +52,7 @@
         }
     }
             
-    .block-grid-col:last-child {
+    .grid-col:last-child {
         grid-row: 1;
         grid-column: 2;
         background: rgba(255,255,255,0.5);
@@ -63,61 +63,61 @@
     }
 }
 //-----
-.col-2-section-4 {
+.grid-section-4 {
     padding: 3rem 0;
     
-    .block-grid-row {
+    .grid-row {
         max-width: 1140px;
         gap: 3rem;
     }
 
-    .block-grid-col {
+    .grid-col {
         padding: 0;
     }
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         max-width: 400px;
         justify-self: end;
     }
 }
 //-----
-.col-2-section-5 {
+.grid-section-5 {
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         max-width: 600px;
         justify-self: center;
     }
 
-    .block-grid-col:last-child {
+    .grid-col:last-child {
         padding: 0;
     }
 }
 //-----
-.col-2-section-6 {
+.grid-section-6 {
     padding: 3rem 0;
 
-    .block-grid-row {
+    .grid-row {
         grid-template-columns: 1fr 2fr;
         max-width: 1100px;
     }
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         padding: 0;
     }
 }
 //-----
-.col-2-section-7 {
+.grid-section-7 {
 
-    .block-grid-row {
+    .grid-row {
         background-color: #d9afe7;
     }
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         max-width: 400px;
         justify-self: end;
     }
 
-    .block-grid-col:last-child {
+    .grid-col:last-child {
         align-self: stretch;
         background: url('https://win.radiox.co.uk/cinch-2022/img/brand_bg.jpg') no-repeat center center / cover;
 
@@ -127,37 +127,37 @@
     }
 }
 //-----
-.col-2-section-8 {
+.grid-section-8 {
     padding: 3rem 0;
 
-    .block-grid-row {
+    .grid-row {
         max-width: 1200px;
         padding: 0;
     }
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         left: 50px;
         z-index: 2;
         background-color:rgba(78,95,222,0.9); 
         color: white;
     }
 
-    .block-grid-col:last-child {
+    .grid-col:last-child {
         padding: 0; 
         left: -50px; 
         z-index: 1;
     }
 }
 //-----
-.col-2-section-9 {
+.grid-section-9 {
     overflow: hidden;
 
-    .block-grid-row {
+    .grid-row {
         padding: 40px 0;
         margin: 0 -40px;
     }
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         display: grid;
         left: 40px; 
         bottom: 40px; 
@@ -171,7 +171,7 @@
         }
     }
 
-    .block-grid-col:last-child {
+    .grid-col:last-child {
         align-self: stretch;
         min-height: min(70vw, 420px);
         left: -40px;
@@ -182,15 +182,15 @@
     }
 }
 //-----
-.col-2-section-10 {
+.grid-section-10 {
     background-image:url('https://win.heart.co.uk/disneyland-paris/img/client-bg.jpg'); 
     padding: 7rem 0;
 
-    .block-grid-row {
+    .grid-row {
         max-width: 1200px;
     }
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         grid-column-end: -1;
         justify-self: end;
         max-width: 350px;
@@ -199,30 +199,30 @@
     }
 }
 //-----
-.col-2-section-11 {
+.grid-section-11 {
     padding: 7rem 0;
     background: url('https://win.radiox.co.uk/cinch-2022/img/brand_bg.jpg') no-repeat center center / cover; 
 
-    .block-grid-row {
+    .grid-row {
         max-width: 1100px; 
         gap:3rem; 
         padding: 0 3rem;
     }
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         color: white; 
         background-color: rgba(0,0,0,0.75);
     }
-    .block-grid-col:last-child {
+    .grid-col:last-child {
         align-self: start; 
         color: white; 
         background-color: rgba(0,0,0,0.75);
     }
 }
 //-----
-.col-2-section-12 {
+.grid-section-12 {
     padding: 3rem 0;
 
-    .block-grid-col:first-child {
+    .grid-col:first-child {
         align-self: stretch;
         padding: 0;
         order: 2;
@@ -232,20 +232,20 @@
         }
     }
 
-    .block-grid-col:last-child {
+    .grid-col:last-child {
         max-width: 550px; 
         justify-self: end;
     }
 }
 //-----
-.col-2-section-13 {
+.grid-section-13 {
 
-    .block-grid-col:first-child{
+    .grid-col:first-child{
         max-width: 600px; 
         justify-self: center;
     }
 
-    .block-grid-col:last-child{
+    .grid-col:last-child{
         align-self: stretch;
         background: url('https://win.heart.co.uk/intuit-quickbooks-2021/img/intuitq.png') no-repeat center center / cover; 
         aspect-ratio: 1 / 1.26; 

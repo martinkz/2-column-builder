@@ -2,7 +2,7 @@ $grid-bp: 1000px;
 
 @import 'sections';
 
-.block-grid-row {
+.grid-row {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,7 +12,7 @@ $grid-bp: 1000px;
         grid-template-columns: 1fr !important;
     }
 }
-.block-grid-col {
+.grid-col {
     position: relative;
     padding: 2rem 3rem;
 
