@@ -225,16 +225,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.grid-row:not(code) {
+.grid-has-borders .grid-row:not(code) {
   border: 3px solid hotpink;
 }
-
-.grid-col {
+.grid-has-borders .grid-col {
   border: 3px dashed #888;
-}
-
-code {
-  white-space: pre;
 }
 
 .styles {
