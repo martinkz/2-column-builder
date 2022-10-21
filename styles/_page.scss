@@ -2,43 +2,27 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.style-box {
-    position: absolute;
-    bottom: 0;
-    padding: 1rem;
-    background-color: #222;
-    color: white;
-    font-size: 0.8rem;
-    line-height: 1.2;
-}
-.style-row {
-    margin: 0 auto;
-    display: table;
-    padding: 1rem;
-    background-color: hotpink;
-    color: white;
-    font-size: 0.8rem;
-    line-height: 1.2;
-}
 .grid-row:not(code) {
     border: 3px solid hotpink;
 }
 .grid-col {
     border: 3px dashed #888;
 }
-
+code {
+    white-space: pre;
+}
 .styles {
-    border-right: 1px solid #555;
+    border-left: 1px solid #4a4a4a;
 }
 .html {
-    border-left: 1px solid #555;
+    border-right: 1px solid #4a4a4a;
 }
 .styles,
 .html {
     align-self: stretch;
     position: relative;
     display: block;
-    padding: 1.5rem;
+    padding: 0.9rem 1.2rem;
     font-family: monospace; 
     white-space: pre;
     background-color: #222;
