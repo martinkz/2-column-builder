@@ -13,6 +13,14 @@
     
 <template id="icon-copy"><button class="btn-copy" type="button"><svg class="icon-copy" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg"><path d="M525 70H268a35 35 0 0 0-35 35v82h-58a35 35 0 0 0-35 35v256a35 35 0 0 0 35 35h257a35 35 0 0 0 35-35v-81h58a35 35 0 0 0 35-35V105a35 35 0 0 0-35-35zm-82 408a12 12 0 0 1-11 12H175c-6 0-12-5-12-12V222c0-7 6-12 12-12h257a12 12 0 0 1 11 12zm94-116a12 12 0 0 1-12 11h-58V222a35 35 0 0 0-35-35H257v-82c0-6 5-12 11-12h257c3 0 6 2 8 4s4 5 4 8z"/></svg><span>Copy</span></button></template>
 
+<div class="controls">
+    <div class="borders-control">
+        <input id="borders" name="borders" type="checkbox">
+        <label for="borders">Show grid borders</label>
+    </div>
+    <!-- <button id="hide-borders-btn" class="controls-btn" type="button">Hide grid element borders</button> -->
+</div>
+
 <code class="grid-row">
     <section class="styles"></section>
     <section class="html"></section>
@@ -268,6 +276,22 @@
                 });
             });
         });
+
+    const toggleGudesCheckbox = document.getElementById("borders");
+    const gridRows = document.querySelectorAll('.grid-row');
+    const gridCells = document.querySelectorAll('.grid-col');
+    gridRows.forEach(el => el.style.border = 'none');
+    gridCells.forEach(el => el.style.border = 'none');
+
+    toggleGudesCheckbox.addEventListener('change', (event) => {
+        if (event.currentTarget.checked) {
+            gridRows.forEach(el => el.style.border = '');
+            gridCells.forEach(el => el.style.border = '');
+        } else {
+            gridRows.forEach(el => el.style.border = 'none');
+            gridCells.forEach(el => el.style.border = 'none');
+        }
+    })
 </script>
 
 </body>
