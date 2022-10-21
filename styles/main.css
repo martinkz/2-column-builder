@@ -216,6 +216,85 @@
   height: auto;
 }
 
+.style-box {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.style-row {
+  margin: 0 auto;
+  display: table;
+  padding: 1rem;
+  background-color: hotpink;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.grid-row {
+  border: 3px solid hotpink;
+}
+
+.grid-col {
+  border: 3px dashed #888;
+}
+
+.styles {
+  border-right: 1px solid #555;
+}
+
+.html {
+  border-left: 1px solid #555;
+}
+
+.styles,
+.html {
+  align-self: stretch;
+  position: relative;
+  display: block;
+  padding: 1.5rem;
+  font-family: monospace;
+  white-space: pre;
+  background-color: #222;
+  color: white;
+  line-height: 1.2;
+  overflow-x: scroll;
+}
+.styles::-webkit-scrollbar,
+.html::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-copy {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: fit-content;
+  min-width: 60px;
+  text-align: center;
+  background: #222;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  transform-origin: top right;
+  transform: scale(0.8);
+}
+
+.icon-copy {
+  display: block;
+  margin: 0 auto;
+  stroke: white;
+  fill: white;
+  width: 42px;
+  height: 42px;
+}
+
 .grid-row {
   margin: 0 auto;
   display: grid;

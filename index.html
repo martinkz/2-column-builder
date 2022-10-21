@@ -1,264 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>2 Column Section</title>
-        <link rel="stylesheet" href="styles/main.css">
 
-        <style>
-            .style-box {
-                position: absolute;
-                bottom: 0;
-                padding: 1rem;
-                background-color: #222;
-                color: white;
-                font-size: 0.8rem;
-                line-height: 1.2;
-            }
-            .style-row {
-                margin: 0 auto;
-                display: table;
-                padding: 1rem;
-                background-color: hotpink;
-                color: white;
-                font-size: 0.8rem;
-                line-height: 1.2;
-            }
-            .grid-row {
-                border: 3px solid hotpink;
-            }
-            .grid-col {
-                border: 3px dashed #888;
-            }
-            .styles {
-                position: relative;
-                display: block;
-                padding: 1.5rem;
-                font-family: monospace; 
-                white-space: pre;
-                background-color: #222;
-                color: white;
-                line-height: 1.2;
-                overflow: hidden;
-            }
-            .btn-copy {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: fit-content;
-                min-width: 80px;
-                text-align: center;
-                background: none;
-                border: none;
-                padding: 1rem;
-                cursor: pointer;
-                color: white;
-            }
-            .icon-copy {
-                display: block;
-                margin: 0 auto;
-                stroke: white;
-                fill: white;
-                width: 42px;
-                height: 42px;
-            }
-        </style>
-    </head>
-    <body>
-        <template id="icon-copy"><button class="btn-copy" type="button"><svg class="icon-copy" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg"><path d="M525 70H268a35 35 0 0 0-35 35v82h-58a35 35 0 0 0-35 35v256a35 35 0 0 0 35 35h257a35 35 0 0 0 35-35v-81h58a35 35 0 0 0 35-35V105a35 35 0 0 0-35-35zm-82 408a12 12 0 0 1-11 12H175c-6 0-12-5-12-12V222c0-7 6-12 12-12h257a12 12 0 0 1 11 12zm94-116a12 12 0 0 1-12 11h-58V222a35 35 0 0 0-35-35H257v-82c0-6 5-12 11-12h257c3 0 6 2 8 4s4 5 4 8z"/></svg><span>Copy</span></button></template>
-        
-        <div class="styles"></div>
-        <section class="grid-section-1">
-            <div class="grid-row">
-                <div class="grid-col"></div>
-                <div class="grid-col"> 
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2 Column Section</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    
+<template id="icon-copy"><button class="btn-copy" type="button"><svg class="icon-copy" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg"><path d="M525 70H268a35 35 0 0 0-35 35v82h-58a35 35 0 0 0-35 35v256a35 35 0 0 0 35 35h257a35 35 0 0 0 35-35v-81h58a35 35 0 0 0 35-35V105a35 35 0 0 0-35-35zm-82 408a12 12 0 0 1-11 12H175c-6 0-12-5-12-12V222c0-7 6-12 12-12h257a12 12 0 0 1 11 12zm94-116a12 12 0 0 1-12 11h-58V222a35 35 0 0 0-35-35H257v-82c0-6 5-12 11-12h257c3 0 6 2 8 4s4 5 4 8z"/></svg><span>Copy</span></button></template>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-1">
+    <div class="grid-row">
+        <div class="grid-col"></div>
+        <div class="grid-col"> 
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+    </div>
+</section>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-2">
+    <div class="grid-row">
+        <div class="grid-col">
+            <img class="bgimage" src="https://win.classicfm.com/tui-july-2022/img/intro3.jpg" alt="">
+        </div>
+        <div class="grid-col"> 
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+    </div>
+</section>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-3">
+    <div class="grid-row">
+        <div class="grid-col">
+        </div>
+        <div class="grid-col"> 
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+    </div>
+</section>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-4">
+    <div class="grid-row">
+        <div class="grid-col sm-max-w-none">
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+        <div class="grid-col">
+            <img src="https://win.radiox.co.uk/barclaycard-blossoms-2022/img/radiox-presents.png" alt="">
+        </div>
+    </div>
+</section>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-5">
+    <div class="grid-row">
+        <div class="grid-col">
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+        <div class="grid-col">
+            <img src="https://win.heart.co.uk/intuit-quickbooks-2021/img/intuitq.png" alt="">
+        </div>
+    </div>
+</section>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-6">
+    <div class="grid-row">
+        <div class="grid-col">
+            <img src="https://win.capitaldance.com/virgin-voyages-2022/img/client-1-img.png" alt="">
+        </div>
+        <div class="grid-col">
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+    </div>
+</section>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-7">
+    <div class="grid-row">
+        <div class="grid-col sm-max-w-none">
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+        <div class="grid-col"></div>
+    </div>
+</section>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-8">
+    <div class="grid-row">
+        <div class="grid-col sm-reset-pos">
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+        <div class="grid-col sm-reset-pos">
+            <img src="https://win.capitalfm.com/bumble-2022/img/intro.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
+
+<section class="grid-section-9">
+    <div class="grid-row">
+        <div class="grid-col sm-reset-pos">
+            <div class="sm-max-w-none">
+                <lorem-ipsum-copy></lorem-ipsum-copy>
             </div>
-        </section>
+        </div>
+        <div class="grid-col sm-reset-pos">
+        </div>
+    </div>
+</section>
 
-        <div class="styles"></div>
-        <section class="grid-section-2">
-            <div class="grid-row">
-                <div class="grid-col">
-                    <img class="bgimage" src="https://win.classicfm.com/tui-july-2022/img/intro3.jpg" alt="">
-                </div>
-                <div class="grid-col"> 
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-            </div>
-        </section>
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
 
-        <div class="styles"></div>
-        <section class="grid-section-3">
-            <div class="grid-row">
-                <div class="grid-col">
-                    
-                </div>
-                <div class="grid-col"> 
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-            </div>
-        </section>
+<section class="grid-section-10">
+    <div class="grid-row">
+        <div class="grid-col sm-max-w-none">
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+    </div>
+</section>
 
-        <div class="styles"></div>
-        <section class="grid-section-4">
-            <div class="grid-row">
-                <div class="grid-col sm-max-w-none">
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-                <div class="grid-col">
-                    <img src="https://win.radiox.co.uk/barclaycard-blossoms-2022/img/radiox-presents.png" alt="">
-                </div>
-            </div>
-        </section>
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
 
-        <div class="styles"></div>
-        <section class="grid-section-5">
-            <div class="grid-row">
-                <div class="grid-col">
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-                <div class="grid-col">
-                    <img src="https://win.heart.co.uk/intuit-quickbooks-2021/img/intuitq.png" alt="">
-                </div>
-            </div>
-        </section>
+<section class="grid-section-11">
+    <div class="grid-row">
+        <div class="grid-col">
+            <lorem-ipsum-copy copy-size="long"></lorem-ipsum-copy>
+        </div>
+        <div class="grid-col">
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+    </div>
+    </div>
+</section>
 
-        <div class="styles"></div>
-        <section class="grid-section-6">
-            <div class="grid-row">
-                <div class="grid-col">
-                    <img src="https://win.capitaldance.com/virgin-voyages-2022/img/client-1-img.png" alt="">
-                </div>
-                <div class="grid-col">
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-            </div>
-        </section>
+<h1 style="text-align: center; padding: 3rem;">Alternative solutions</h1>
 
-        <div class="styles"></div>
-        <section class="grid-section-7">
-            <div class="grid-row">
-                <div class="grid-col sm-max-w-none">
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-                <div class="grid-col"></div>
-            </div>
-        </section>
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
 
-        <div class="styles"></div>
-        <section class="grid-section-8">
-            <div class="grid-row">
-                <div class="grid-col sm-reset-pos">
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-                <div class="grid-col sm-reset-pos">
-                    <img src="https://win.capitalfm.com/bumble-2022/img/intro.jpg" alt="">
-                </div>
-            </div>
-        </section>
+<section class="grid-section-12">
+    <div class="grid-row">
+        <div class="grid-col">
+            <img class="bgimage" src="https://win.capitalfm.com/madame-tussauds-2022/img/client_bg.jpg">
+        </div>
+        <div class="grid-col sm-max-w-none"> 
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+    </div>
+</section>
 
-        <div class="styles"></div>
-        <section class="grid-section-9">
-            <div class="grid-row">
-                <div class="grid-col sm-reset-pos">
-                    <div class="sm-max-w-none">
-                        <lorem-ipsum-copy></lorem-ipsum-copy>
-                    </div>
-                </div>
-                <div class="grid-col sm-reset-pos">
-                </div>
-            </div>
-        </section>
+<code class="grid-row">
+    <section class="styles"></section>
+    <section class="html"></section>
+</code>
 
-        <div class="styles"></div>
-        <section class="grid-section-10">
-            <div class="grid-row">
-                <div class="grid-col sm-max-w-none">
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-            </div>
-        </section>
+<section class="grid-section-13">
+    <div class="grid-row">
+        <div class="grid-col">
+            <lorem-ipsum-copy></lorem-ipsum-copy>
+        </div>
+        <div class="grid-col"></div>
+    </div>
+</section>
 
-        <div class="styles"></div>
-        <section class="grid-section-11">
-            <div class="grid-row">
-                <div class="grid-col">
-                    <lorem-ipsum-copy copy-size="long"></lorem-ipsum-copy>
-                </div>
-                <div class="grid-col">
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-            </div>
-            </div>
-        </section>
+<script>
+    class LoremIpsumCopy extends HTMLElement {
+        constructor() {
+            super();
+            const size = this.getAttribute('copy-size');
+            const shadow = this.attachShadow({mode: 'open'});
+            const content = `<h2>Cras tempor tellus neque, sit amet mollis turpis ornare in ex purus</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium ex purus, non suscipit nulla tincidunt sed. Phasellus feugiat urna at aliquam scelerisque. Maecenas fermentum dolor vitae eros varius, quis tempor nunc posuere. Phasellus imperdiet nisl est, vitae viverra justo ultricies sed.</p>
+            <p>Etiam pellentesque ac libero at dignissim. Quisque nisl quam, condimentum a nibh sed, rhoncus semper dui. Donec eu neque arcu. Duis ultricies magna scelerisque sollicitudin semper. Mauris maximus sapien eget dolor interdum malesuada.</p>
+            <p>Proin eget libero pretium, porta neque sit amet, venenatis justo. Praesent sed iaculis quam. Vivamus dictum quis ante at consequat. Quisque ligula elit, semper vitae diam at, scelerisque posuere lacus. </p>`;
+            const extraContent = `<p>Duis et ligula a felis ultrices tristique. Donec dignissim egestas felis, a placerat felis sagittis a. Morbi mattis augue diam, a vehicula mi eleifend quis. Praesent et turpis porta, tincidunt quam non, tristique turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p>Praesent at tellus imperdiet, pulvinar eros eget, volutpat orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tincidunt convallis mi, eu eleifend nunc sagittis et.</p>`;
+            shadow.innerHTML = content + (size==='long' ? extraContent : '');
+        }
+    }
+    customElements.define('lorem-ipsum-copy', LoremIpsumCopy);
 
-        <h1 style="text-align: center; padding: 3rem;">Alternative solutions</h1>
+    fetch('styles/_sections.scss')
+        .then(response => response.text())
+        .then(data => {
+            const styleData = data.split('//-----');
+            const styleEls = document.querySelectorAll('.styles');
+            const htmlCodeEls = document.querySelectorAll('.html');
+            const sectionEls = document.querySelectorAll('[class*=grid-section-]');
+            const copyIconTemplate = document.getElementById("icon-copy");
 
-        <div class="styles"></div>
-        <section class="grid-section-12">
-            <div class="grid-row">
-                <div class="grid-col">
-                    <img class="bgimage" src="https://win.capitalfm.com/madame-tussauds-2022/img/client_bg.jpg">
-                </div>
-                <div class="grid-col sm-max-w-none"> 
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-            </div>
-        </section>
+            styleEls.forEach(function(el, idx) {
+                const copyIcon = copyIconTemplate.content.cloneNode(true);
+                el.textContent = styleData[idx].trim();
+                el.appendChild(copyIcon);
+            });
 
-        <div class="styles"></div>
-        <section class="grid-section-13">
-            <div class="grid-row">
-                <div class="grid-col">
-                    <lorem-ipsum-copy></lorem-ipsum-copy>
-                </div>
-                <div class="grid-col"></div>
-            </div>
-        </section>
+            htmlCodeEls.forEach(function(el, idx) {
+                const loremIpsumEl = '<lorem-ipsum-copy></lorem-ipsum-copy>';
+                const loremIpsumText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+                el.textContent = sectionEls[idx].outerHTML.replace(loremIpsumEl, loremIpsumText);
 
-        <script>
-            class LoremIpsumCopy extends HTMLElement {
-                constructor() {
-                    super();
-                    const size = this.getAttribute('copy-size');
-                    const shadow = this.attachShadow({mode: 'open'});
-                    const content = `<h2>Cras tempor tellus neque, sit amet mollis turpis ornare in ex purus</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium ex purus, non suscipit nulla tincidunt sed. Phasellus feugiat urna at aliquam scelerisque. Maecenas fermentum dolor vitae eros varius, quis tempor nunc posuere. Phasellus imperdiet nisl est, vitae viverra justo ultricies sed.</p>
-                    <p>Etiam pellentesque ac libero at dignissim. Quisque nisl quam, condimentum a nibh sed, rhoncus semper dui. Donec eu neque arcu. Duis ultricies magna scelerisque sollicitudin semper. Mauris maximus sapien eget dolor interdum malesuada.</p>
-                    <p>Proin eget libero pretium, porta neque sit amet, venenatis justo. Praesent sed iaculis quam. Vivamus dictum quis ante at consequat. Quisque ligula elit, semper vitae diam at, scelerisque posuere lacus. </p>`;
-                    const extraContent = `<p>Duis et ligula a felis ultrices tristique. Donec dignissim egestas felis, a placerat felis sagittis a. Morbi mattis augue diam, a vehicula mi eleifend quis. Praesent et turpis porta, tincidunt quam non, tristique turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    <p>Praesent at tellus imperdiet, pulvinar eros eget, volutpat orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tincidunt convallis mi, eu eleifend nunc sagittis et.</p>`;
-                    shadow.innerHTML = content + (size==='long' ? extraContent : '');
-                }
-            }
-            customElements.define('lorem-ipsum-copy', LoremIpsumCopy);
+                const copyIcon = copyIconTemplate.content.cloneNode(true);
+                el.appendChild(copyIcon);
+            });
 
-            fetch('styles/_sections.scss')
-                .then(response => response.text())
-                .then(data => {
-                    const styleEls = document.querySelectorAll('.styles');
-                    const styleData = data.split('//-----');
-                    const copyIconTemplate = document.getElementById("icon-copy");
-                    styleEls.forEach(function(el, idx) {
-                        const copyIcon = copyIconTemplate.content.cloneNode(true);
-                        el.textContent = styleData[idx].trim();
-                        el.appendChild(copyIcon);
-                    });
-                    const copyBtns = document.querySelectorAll('.btn-copy');
-                    copyBtns.forEach(function(el) {
-                        el.addEventListener('click', function(){
-                            navigator.clipboard.writeText(this.parentElement.childNodes[0].textContent);
-                            const currentBtnText = this.childNodes[1];
-                            currentBtnText.textContent = "Copied!";
-                            setTimeout(function(){
-                                currentBtnText.textContent = "Copy";
-                            }, 3000);
-                        });
-                    });
+            const copyBtns = document.querySelectorAll('.btn-copy');
+            
+            copyBtns.forEach(function(el) {
+                el.addEventListener('click', function(){
+                    navigator.clipboard.writeText(this.parentElement.childNodes[0].textContent);
+                    const currentBtnText = this.childNodes[1];
+                    currentBtnText.textContent = "Copied!";
+                    setTimeout(function(){
+                        currentBtnText.textContent = "Copy";
+                    }, 3000);
                 });
-        </script>
-    </body>
+            });
+        });
+</script>
+
+</body>
 </html>
