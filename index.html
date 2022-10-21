@@ -288,23 +288,23 @@
                     }, 3000);
                 });
             });
-        });
 
-    const toggleGudesCheckbox = document.getElementById("borders");
-    const gridRows = document.querySelectorAll('.grid-row');
-    const gridCells = document.querySelectorAll('.grid-col');
-    gridRows.forEach(el => el.style.border = 'none');
-    gridCells.forEach(el => el.style.border = 'none');
-
-    toggleGudesCheckbox.addEventListener('change', (event) => {
-        if (event.currentTarget.checked) {
-            gridRows.forEach(el => el.style.border = '');
-            gridCells.forEach(el => el.style.border = '');
-        } else {
+            const toggleGudesCheckbox = document.getElementById("borders");
+            const gridRows = document.querySelectorAll('.grid-row');
+            const gridCells = document.querySelectorAll('.grid-col');
             gridRows.forEach(el => el.style.border = 'none');
             gridCells.forEach(el => el.style.border = 'none');
-        }
-    })
+
+            toggleGudesCheckbox.addEventListener('change', (event) => {
+                if (event.currentTarget.checked) {
+                    gridRows.forEach(el => el.style.border = '');
+                    gridCells.forEach(el => el.style.border = '');
+                } else {
+                    gridRows.forEach(el => el.style.border = 'none');
+                    gridCells.forEach(el => el.style.border = 'none');
+                }
+            })
+        });
 </script>
 
 
