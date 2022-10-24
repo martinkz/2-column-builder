@@ -68,28 +68,40 @@
     
     .grid-row {
         max-width: 1140px;
-        gap: 3rem;
-    }
-
-    .grid-col {
-        padding: 0;
-    }
-
-    .grid-col:first-child {
-        max-width: 370px;
-        justify-self: end;
-    }
-}
-//-----
-.grid-section-5 {
-
-    .grid-col:first-child {
-        max-width: 600px;
-        justify-self: center;
+        gap: 1rem;
     }
 
     .grid-col:last-child {
         padding: 0;
+    }
+
+    .grid-col:first-child {
+        @media (min-width: #{$grid-bp + 1px}) {
+            max-width: 350px;
+            justify-self: end;
+        }
+    }
+}
+//-----
+.grid-section-5 {
+    padding: 7rem 0;
+    background: url('https://win.heart.co.uk/studio-2022/img/Studio%20red%20snowflake%20wrap.png') no-repeat center center / cover;
+
+    .grid-row {
+        max-width: 1200px;
+        background: rgb(1 84 244 / 53%);;
+    }
+
+    .grid-col:first-child {
+        max-width: 350px;
+        margin: 0 auto;
+        color: white;
+        background: rgba(0,0,0,0.6);
+
+        @media (min-width: #{$grid-bp + 1px}) {
+            grid-column: 2 / 2;
+            margin: 0;
+        }
     }
 }
 //-----
@@ -113,8 +125,10 @@
     }
 
     .grid-col:first-child {
-        max-width: 400px;
-        justify-self: end;
+        @media (min-width: #{$grid-bp + 1px}) {
+            max-width: 400px;
+            justify-self: end;
+        }
     }
 
     .grid-col:last-child {
@@ -136,16 +150,22 @@
     }
 
     .grid-col:first-child {
-        left: 50px;
         z-index: 2;
         background-color:rgba(78,95,222,0.9); 
         color: white;
+
+        @media (min-width: #{$grid-bp + 1px}) {
+            left: 50px;
+        }
     }
 
     .grid-col:last-child {
-        padding: 0; 
-        left: -50px; 
+        padding: 0;
         z-index: 1;
+
+        @media (min-width: #{$grid-bp + 1px}) {
+            left: -50px;
+        }
     }
 }
 //-----
@@ -153,49 +173,54 @@
     overflow: hidden;
 
     .grid-row {
-        padding: 40px 0;
-        margin: 0 -40px;
+        @media (min-width: #{$grid-bp + 1px}) {
+            padding: 40px 0;
+            margin: 0 -40px;
+        }
     }
 
     .grid-col:first-child {
         display: grid;
-        left: 40px; 
-        bottom: 40px; 
-        z-index: 2; 
+        z-index: 2;
         background-color:#059073; 
         color: white;
 
+        @media (min-width: #{$grid-bp + 1px}) {
+            left: 40px; 
+            bottom: 40px;
+        }
+
         > div {
-            max-width: 450px; 
-            justify-self: end;
+            @media (min-width: #{$grid-bp + 1px}) {
+                max-width: 450px;
+                justify-self: end;
+            }
         }
     }
 
     .grid-col:last-child {
         align-self: stretch;
         min-height: min(70vw, 420px);
-        left: -40px;
-        top: 40px; 
         z-index: 1; 
         padding: 0; 
         background: url('https://win.heart.co.uk/ebay-home-and-garden/img/intro_bg-cropped.jpg') no-repeat center center / cover;
+
+        @media (min-width: #{$grid-bp + 1px}) {
+            left: -40px;
+            top: 40px; 
+        }
     }
 }
 //-----
 .grid-section-10 {
-    padding: 7rem 0;
-    background: url('https://win.heart.co.uk/disneyland-paris/img/client-bg.jpg');
-
-    .grid-row {
-        max-width: 1200px;
-        background: rgb(224 1 244 / 53%);
-    }
 
     .grid-col:first-child {
-        grid-column: 2 / 2;
-        max-width: 350px;
-        color: white;
-        background-color: rgba(0,0,0,0.6);
+        max-width: 600px;
+        justify-self: center;
+    }
+
+    .grid-col:last-child {
+        padding: 0;
     }
 }
 //-----
@@ -237,8 +262,10 @@
     }
 
     .grid-col:last-child {
-        max-width: 550px; 
-        justify-self: end;
+        @media (min-width: #{$grid-bp + 1px}) {
+            max-width: 450px;
+            justify-self: end;
+        }
     }
 }
 //-----

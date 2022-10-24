@@ -19,18 +19,6 @@ $grid-bp: 1000px;
     }
 }
 
-@media(max-width: $grid-bp) {
-    .sm-max-w-none {
-        max-width: none !important;
-    }
-    .sm-reset-pos {
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
-    }
-}
-
 .bgimage {
     position: absolute;
     width: 100%; 
