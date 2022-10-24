@@ -1,50 +1,115 @@
-$grid-bp: 1000px;
-
+@import 'grid';
 @import 'sections';
-@import 'page';
 @import 'prismjs';
 
-.grid-row {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-
-    @media(max-width: $grid-bp) {
-        grid-template-columns: 1fr !important;
-    }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-.grid-col {
+
+img {
+    display: block;
+}
+
+.grid-has-borders {
+    .grid-row:not(code) {
+        border: 3px solid hotpink;
+    }
+    .grid-col {
+        border: 3px dashed #888;
+    }
+} 
+
+.styles {
+    border-left: 1px solid #4a4a4a;
+}
+.html {
+    border-right: 1px solid #4a4a4a;
+}
+.styles,
+.html {
+    align-self: stretch;
     position: relative;
-    padding: 2rem 3rem;
+    display: block;
+    padding: 0.9rem 1.2rem;
+    font-family: monospace; 
+    white-space: pre;
+    background-color: #222;
+    color: white;
+    line-height: 1.2;
+    overflow-x: scroll;
 
-    img {
-        width: 100%;
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 
-@media(max-width: $grid-bp) {
-    .sm-max-w-none {
-        max-width: none !important;
-    }
-    .sm-reset-pos {
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
-    }
-}
-
-.bgimage {
+.btn-copy {
     position: absolute;
-    width: 100%; 
-    height: 100%; 
-    left: 0;
-    top: 0;
-    object-fit: cover;
-    object-position: center center;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    min-width: 60px;
+    text-align: center;
+    background: #222;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: white;
+    transform-origin: top right;
+    transform: scale(0.8);
+}
+.icon-copy {
+    display: block;
+    margin: 0 auto;
+    stroke: white;
+    fill: white;
+    width: 42px;
+    height: 42px;
+}
 
-    @media(max-width: $grid-bp) {
-        position: static;
+.controls {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.borders-control {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+input:is([type="checkbox"]) {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    background: lightgrey;
+    border: 2px solid grey;
+    border-radius: 0.3em;
+    transition: background-color 300ms, border-color 300ms;
+	
+    &:hover {
+        background: pink;
+        border: 2px solid pink;
     }
+	
+    &:focus {
+        outline: 2px solid hotpink;
+        outline-offset: 2px;
+    }
+	
+    &:checked {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='-10 -10 64.56 64.56'%3E%3Cpath d='M23.297 38.74a6.563 6.563 0 0 1-10.16.499L1.308 26.112a5.083 5.083 0 1 1 7.551-6.805l8.369 9.288a.617.617 0 0 0 .956-.047L35.386 5.217a5.083 5.083 0 1 1 8.181 6.032L23.297 38.74z'/%3E%3C/svg%3E"), pink;
+        background-repeat: no-repeat;
+        border: 2px solid pink;
+    }
+}
+
+input:is([type="radio"]) {
+    border-radius: 50%;
+}
+
+.borders-control:hover input {
+    border: 2px solid black;
 }

@@ -188,11 +188,11 @@
 
     .grid-row {
         max-width: 1200px;
+        background: rgb(224 1 244 / 53%);
     }
 
     .grid-col:first-child {
-        grid-column-end: -1;
-        justify-self: end;
+        grid-column: 2 / 2;
         max-width: 350px;
         color: white;
         background-color: rgba(0,0,0,0.6);
