@@ -154,7 +154,7 @@
         background-color:rgba(78,95,222,0.9); 
         color: white;
 
-        @media (min-width: grid-bp) {
+        @media (min-width: $grid-bp) {
             left: 50px;
         }
     }
